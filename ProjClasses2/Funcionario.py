@@ -1,4 +1,4 @@
-class Cliente:
+class Funcionario:
     def __init__(self, ID, nome, telefone, endereco, cidade, estado, nasc, sal):
         self.ID = ID
         self.nome = nome

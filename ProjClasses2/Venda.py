@@ -1,10 +1,11 @@
-class Produto:
-    def __init__(self, ID, descricao, preco, entrada, saida):
+class Venda:
+    def __init__(self, ID, descricao, produto, funcionario, cliente, data):
         self.ID = ID
         self.descricao = descricao
-        self.preco = preco
-        self.entrada = entrada
-        self.saida = saida
+        self.produto = produto
+        self.funcionario = funcionario
+        self.cliente = cliente
+        self.data = data
 
     def setID(self, ID):
         self.ID = ID
@@ -18,20 +19,17 @@ class Produto:
     def getDescricao (self):
         return self.descricao
 
-    def setPreco(self, preco):
-        self.preco = preco
+    def setData(self, data):
+        self.data = data
 
-    def getPreco (self):
-        return self.preco
+    def getData(self):
+        return self.data
 
-    def setEntrada(self, entrada):
-        self.entrada = entrada
+    def getFunc (self):
+        return self.funcionario
 
-    def getEntrada (self):
-        return self.entrada
+    def getProd (self):
+        return self.produto
 
-    def setSaida(self, saida):
-        self.saida = saida
-
-    def getSaida (self):
-        return self.saida
+    def getCliente (self):
+        return self.cliente
